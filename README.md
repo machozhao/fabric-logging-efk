@@ -38,7 +38,8 @@ Prerequisites: Docker
 ```
 ```
 ### Start and Access
-```
+```bash
+docker-compose -f docker-compose-efk.yaml up
 http://localhost:5601
 ```
 Set default index: fluentd-*
