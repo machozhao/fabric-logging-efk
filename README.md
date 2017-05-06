@@ -25,7 +25,7 @@ Prerequisites: Docker
         fluentd-address: localhost:24224
         tag: httpd.access
 ```        
-#### Docker
+#### Or Docker
 ```
     logging:
       driver: "fluentd"
@@ -34,6 +34,9 @@ Prerequisites: Docker
         fluentd-address: localhost:24224
         tag: httpd.access
 ```        
-#### set up default Docker container log driver for all of containers.
+#### Or set up default Docker container log driver for all of containers.
 ```
 ```
+
+### Reference
+https://docs.docker.com/engine/admin/logging/overview/
