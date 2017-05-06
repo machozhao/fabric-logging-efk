@@ -11,3 +11,16 @@ Step 2: Start Containers
 Step 3: Generate httpd Access Logs
 Step 4: Confirm Logs from Kibana
 
+
+Add log driver for your container:
+    links:
+      - fluentd
+    depends_on:
+      - fluentd
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: httpd.access
+        
+Or set up default Docker container log driver for all of containers.
