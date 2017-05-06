@@ -37,6 +37,11 @@ Prerequisites: Docker
 #### Or set up default Docker container log driver for all of containers.
 ```
 ```
+### Start and Access
+```
+http://localhost:5601
+```
+Set default index: fluentd-*
 
 ### References
 * https://docs.docker.com/engine/admin/logging/overview/
