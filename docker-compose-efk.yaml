@@ -1,5 +1,6 @@
 version: '2'
 services:
+  # Web Service, just for testing: producing log
   web:
     image: httpd
     ports:
