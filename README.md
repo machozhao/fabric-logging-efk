@@ -6,10 +6,10 @@ This article explains how to collect Hyperledge Fabric logs to EFK (Elasticsearc
 ### Table of Contents
 Prerequisites: Docker
 1. prepare docker-compose.yml
-1. Prepare Fluentd image with your Config + Plugin
-1. Start Containers
-1. Generate httpd Access Logs
-1. Confirm Logs from Kibana
+1. Start EFK containers
+1. Start Fabric Containers
+1. Access Kibana
+1. Config index from Kibana
 
 ### Prepare docker-compose file and work dir
 ```
