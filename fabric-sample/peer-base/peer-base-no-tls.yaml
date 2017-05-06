@@ -18,6 +18,6 @@ services:
     logging:
       driver: "fluentd"
       options:
-        fluentd-async-connect: "true"
-        fluentd-address: localhost:24224
+        fluentd-async-connect: "true"     # Enable Async mode
+        fluentd-address: localhost:24224  # Link to Fluentd service
         tag: fabric.peer
