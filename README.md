@@ -20,6 +20,7 @@ Add log driver for your container:
     logging:
       driver: "fluentd"
       options:
+        fluentd-async-connect: "true"
         fluentd-address: localhost:24224
         tag: httpd.access
         
