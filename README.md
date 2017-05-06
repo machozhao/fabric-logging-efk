@@ -105,6 +105,15 @@ http://localhost:5601
 ```
 fluentd-*
 ```
+### Generate TX and view logs in Kibana
+You can do transaction in Fabric, and we will find related logs in Kibana:
+#### Invoke TX
+```
+docker exec -it cli bash
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com CORE_PEER_ADDRESS=peer0.org1.example.com:7051 CORE_PEER_LOCALMSPID="Org0MSP" CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/cacerts/org1.example.com-cert.pem peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n mycc -c '{"Args":["invoke","a","b","10"]}'
+```
+#### View logs in Kibana
+
 
 ### References
 * https://docs.docker.com/engine/admin/logging/overview/
