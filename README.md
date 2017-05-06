@@ -38,5 +38,6 @@ Prerequisites: Docker
 ```
 ```
 
-### Reference
-https://docs.docker.com/engine/admin/logging/overview/
+### References
+* https://docs.docker.com/engine/admin/logging/overview/
+* http://www.imekaku.com/2016/09/26/fluentd-conclusion/
