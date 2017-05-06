@@ -28,14 +28,14 @@ services:
       - elasticsearch
 
   elasticsearch:
-    image: elasticsearch
+    image: elasticsearch:5.4.0
     expose:
       - 9200
     ports:
       - "9200:9200"
 
   kibana:
-    image: kibana
+    image: kibana:5.4.0
     links:
       - "elasticsearch"
     ports:
