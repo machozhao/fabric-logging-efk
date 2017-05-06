@@ -114,7 +114,7 @@ CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypt
 ```
 #### View logs in Kibana
 !["Kibana Scree Shopt"](https://github.com/machozhao/fabric-logging-efk/raw/master/docs/images/kibana_screen_shot_1.png)
-*Fig. 1: Kibana Scree Shopt*
+*Fig. 1: Kibana Screen Shot*
 
 ### References
 * https://docs.docker.com/engine/admin/logging/overview/
