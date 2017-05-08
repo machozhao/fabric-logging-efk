@@ -119,3 +119,4 @@ CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypt
 ### References
 * https://docs.docker.com/engine/admin/logging/overview/
 * http://www.imekaku.com/2016/09/26/fluentd-conclusion/
+* https://docs.docker.com/engine/admin/systemd/ *Control and configure Docker with systemd*
