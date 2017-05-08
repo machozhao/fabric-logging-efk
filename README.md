@@ -52,7 +52,18 @@ chrome http://localhost:5601
 ```        
 #### Or set up default Docker container log driver for all of containers.
 ```
+# Modify /etc/docker/daemon.json file, and add following lines:
+{
+    "log-driver": "fluentd",
+    "log-opts": {
+        "fluentd-async-connect": "true",
+        "fluentd-address": "localhost:24224"
+     }
+}
+# And restart docker daemon
+docker-compose restart daemon
 ```
+
 ### For example, when using fabric 1.0.0 release.tgz, these steps for your references:
 #### Change base peer docker compose file: e2e/peer-base/peer-base-no-tls.yaml 
 ```
